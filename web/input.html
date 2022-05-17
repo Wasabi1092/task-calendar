@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Task</title>
+        <link rel="stylesheet" href="/css/main.css">
+        <script>
+            window.jQuery || document.write(unescape('%3Cscript src="path/to/jquery.min.js"%3E%3C/script%3E'))
+            $(function(){
+                var update = function() {
+                    $('#result').text(        
+                        JSON.stringify($('form').serialize())
+                    );
+                };
+                update();
+                $('form').change(update);
+            })
+        </script>
+    </head>
+    <body>
+        <p>Put Assignment Details Below</p>
+
+        <form>
+            Assignment Name: <br> <input type="text" name="name">
+            <br>
+            Due Date: <br> <input type="date" name="date" value="2022-1-1" min="2022-1-1" max="2100-12-25">
+            <br>
+            Subject: <br> <input type="text" name="subject">
+            <br>
+            <input type="submit" value="Submit" class="submit" onclick="update()">
+        </form>
+        <div id="result"></div>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+#CalendarBut{
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-color:rgb(47, 47, 47);
+    border-radius: 5px;
+    margin-right: 9%;
+    margin-left: 15px;
+    margin-bottom: 0;
+    height: 40px;
+    width: 20%;
+    background-color: rgb(67, 127, 247);
+    color: white
+}
+
+#CalendarBut:hover{
+    background-color: rgb(49, 95, 186)
+}
+
+input.submit {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    align-self: center;
+    background-color: rgb(47, 47, 47);
+    margin: 20px;
+}
+
+input{
+    background-color: rgb(99, 99, 99);
+    width: 200px;
+    color: white;
+}
+
+p{
+    color: white;
+    margin: 20px;
+}
+
+form {
+    color: white;
+    margin: 20px;
+}
+
+
+h3{
+    display: inline-block;
+
+}
+tr.border-bottom{
+    border-bottom:2px solid rgb(67, 127, 247);
+}
+
+hr{
+    width: 98%;
+    margin: 1%;
+    border-bottom:5px solid rgb(67, 127, 247);
+}
+
+html{
+    background-color: rgb(47, 47, 47);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+td{
+    padding-top:10px;
+    color: white;
+    
+}
+
+th{
+    color: white;
+    padding-bottom: 10px;
+}
+
+table{
+    margin: 1%;
+    width: 98%;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+div {    
+    text-align: right;
+    color: white;
+    margin-right: 1%;
+}
+
+th.task {
+    max-width: 35%;
+}
+
+th.ddate {
+    max-width: 15%;
+}
+
+th.time {
+    max-width: 15%;
+}
+
+th.done {
+    max-width: 15%;
+}
+
+th.subject {
+    max-width: 25%;
+}
+
+.popup {
+    position:relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    position: absolute;    
+}
+
+.popup .show{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn{
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to{opacity:1;}
+}

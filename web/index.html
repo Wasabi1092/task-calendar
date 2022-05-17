@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task Manager</title>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="shortcut icon" href="favicon.png" >
+        <script>
+            function myFunction() {
+                var popup = document.getElementById("tasks");
+                popup.classList.toggle("show")
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <button id="CalendarBut">Toggle Calendar View</button>
+            <button id="CalendarBut" class="popup" target="tasks" onclick="myFunction()">Add new Assignment
+                <iframe id="tasks" class="popuptext" src="web/input.html"></iframe>
+            </button>
+            
+            <h3>Term 2 Week 1 05/05/2022 10:50AM</h3>
+        </div>
+        
+        <hr></hr>
+            <table>
+                <thead >
+                    <tr class="border-bottom">
+                        <th class="task">Task Name</th>
+                        <th class="ddate">Due Date</th>
+                        <th class="time">Time Remaining</th>
+                        <th class="done">% Done?</th>
+                        <th class="subject">Subject</th>
+                    </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="task">Japanese Investigation</td>
+                        <td class="ddate">13 May</td>
+                        <td class="time">8 Days</td>
+                        <td class="done">50%</td>
+                        <td class="subject">Japanese</td>
+                    </tr>
+                </tbody>
+            </table>
+    </body>
+</html>
